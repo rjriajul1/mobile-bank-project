@@ -30,7 +30,7 @@
 
             <div class="flex justify-center items-center gap-8">
                 <img src="asset/Group.png" alt="this is a logo image">
-                <p class="font-bold text-xl mb-2">$ <span>4500</span></p>
+                <p class="font-bold text-xl mb-2">$ <span id="main-balance">4500</span></p>
             </div>
                 <p class=" font-bold text-gray-500 absolute top-12 left-[120px]">Available Balance</p>
             <div>
@@ -51,12 +51,12 @@
      
             <div class="grid grid-cols-3 gap-4 mt-8">
                 <!-- box one -->
-                <div class="border border-gray-300 text-center rounded-lg p-4 bg-stone-200">
+                <div id="add-money-box" class="border border-gray-300 text-center rounded-lg p-4 bg-stone-200">
                   <img class="mx-auto mb-3" src="asset/wallet 1.png" alt="">
                   <p class="font-bold ">Add Money</p>
                 </div>
                 <!-- box two -->
-                <div class="border border-gray-300 text-center rounded-lg p-4 bg-stone-200">
+                <div id="cashout-box" class="border border-gray-300 text-center rounded-lg p-4 bg-stone-200">
                   <img class="mx-auto mb-3" src="asset/send 1.png" alt="">
                   <p class="font-bold ">Cashout</p>
                 </div>
@@ -86,7 +86,7 @@
 
         <!-- add money form start here -->
          <section>
-                <div>
+                <div id="add-money-form">
                     <h1 class="font-bold text-2xl mt-8 ml-2 ">Add Money</h1>
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       
@@ -107,22 +107,22 @@
                             <label class="label">
                               <span class="label-text font-bold text-xl">Bank Account Number</span>
                             </label>
-                            <input id="mobile-number" value="01452369874" type="number" placeholder="Enter 11 digit account number" class="input bg-gray-300 " required />
+                            <input id="bank-account-number" value="01452369874" type="number" placeholder="Enter 11 digit account number" class="input bg-gray-300 " required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold text-xl">Amount to Add</span>
                             </label>
-                            <input id="mobile-number"  type="number" placeholder="Add Amount to withdraw" class="input bg-gray-300 " required />
+                            <input id="add-money-amount"  type="number" placeholder="Add Amount to withdraw" class="input bg-gray-300 " required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold text-xl">Pin Number</span>
                             </label>
-                            <input id="login-pin-number" value="1234" type="text" placeholder="Enter 4 digit pin number" class="input bg-gray-300" required />
+                            <input id="add-money-pin-number" value="1234" type="text" placeholder="Enter 4 digit pin number" class="input bg-gray-300" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="login-btn" class="btn btn-primary font-bold text-xl">Add Money</button>
+                            <button id="add-money-btn" class="btn btn-primary font-bold text-xl">Add Money</button>
                           </div>
                         </form>
                       </div>
@@ -133,7 +133,7 @@
 
         <!-- cashout form start here -->
          <section>
-                <div>
+                <div id="cashout-form">
                     <h1 class="font-bold text-2xl mt-8 ml-2 ">Cash Out</h1>
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       
@@ -144,22 +144,22 @@
                             <label class="label">
                               <span class="label-text font-bold text-xl">Agent Number</span>
                             </label>
-                            <input id="mobile-number" value="01452369874" type="number" placeholder="Enter 11 digit number" class="input bg-gray-300 " required />
+                            <input id="cashou-agent-number" value="01452369874" type="number" placeholder="Enter 11 digit number" class="input bg-gray-300 " required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold text-xl">Amount </span>
                             </label>
-                            <input id="mobile-number"  type="number" placeholder="Enter amount to withdraw" class="input bg-gray-300 " required />
+                            <input id="cashout-amount"  type="number" placeholder="Enter amount to withdraw" class="input bg-gray-300 " required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-bold text-xl">Pin Number</span>
                             </label>
-                            <input id="login-pin-number" value="1234" type="text" placeholder="Enter 4 digit pin number" class="input bg-gray-300" required />
+                            <input id="cashout-pin-number" value="1234" type="text" placeholder="Enter 4 digit pin number" class="input bg-gray-300" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="login-btn" class="btn btn-primary font-bold text-xl">Withdraw Money</button>
+                            <button id="cashout-btn" class="btn btn-primary font-bold text-xl">Withdraw Money</button>
                           </div>
                         </form>
                       </div>
@@ -171,6 +171,10 @@
        </section>
       <!-- welcome section end here -->
     </section>
+    <script src="script/toggle.js"></script>
+    <script src="utilites/utilites.js"></script>
+    <script src="script/addMoney.js"></script>
+    <script src="script/cashout.js"></script>
     
 </body>
 
