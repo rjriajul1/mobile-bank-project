@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moblile bank project</title>
+
+    <!-- tailwind and daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-[650px] min-h-screen bg-gray-200 mx-auto">
+        <header>
+            <nav class="">
+                <div class=" flex justify-center items-center relative">
+                    <img class="mt-44" src="asset/Rectangle 1.png" alt="">
+                    <img class="absolute top-60  " src="asset/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+       
+        <!-- login form start here -->
+        <section>
+            <div class=" -mt-40">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-xl">Mobile Number</span>
+                        </label>
+                        <input id="mobile-number" value="01452369874" type="number" placeholder="Enter your number" class="input bg-gray-300" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-xl">4 Digit Pin</span>
+                        </label>
+                        <input id="login-pin-number" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input bg-gray-300" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="login-btn" class="btn btn-primary font-bold text-xl">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- login form end here -->
+    </section>
+    <script src="script/login.js"></script>
+    <script src="utilites/utilites.js"></script>
+</body>
+
+</html>
