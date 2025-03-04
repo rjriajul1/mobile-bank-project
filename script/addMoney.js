@@ -16,8 +16,8 @@ document.getElementById('add-money-btn')
         const addMoneyPinNumber = getElementByIdValue('add-money-pin-number');
         const mainBalance = getElementByIdInnerText('main-balance');
         const selectedBank = document.getElementById('bank-select').value;
-        
-           if(addMoneyAmount <= 0 ){
+         
+           if(!addMoneyAmount || addMoneyAmount <= 0 ){
            alert('need a positive amount');
            return;
            

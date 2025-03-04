@@ -5,9 +5,9 @@ document.getElementById('cashout-btn')
    const cashoutAmount=getElementByIdValue('cashout-amount');
    const cashoutPinNumber=getElementByIdValue('cashout-pin-number');
    const mainBalance =getElementByIdInnerText('main-balance');
-   
-   if(mainBalance <= cashoutAmount){
-    alert("corres your amount limit");
+    
+   if(!mainBalance || mainBalance <= cashoutAmount){
+    alert("over your amount limit");
     return;
    }
    
